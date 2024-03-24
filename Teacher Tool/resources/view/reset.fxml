@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label alignment="TOP_CENTER" prefHeight="41.0" prefWidth="620.0" text="Recommend-Easy">
+         <font>
+            <Font name="Calibri Bold" size="36.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="90.0" />
+         </VBox.margin>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#0043a1cc" />
+                  <Stop color="#fa0000ba" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label alignment="CENTER" prefHeight="20.0" prefWidth="606.0" text="Last step of the sign-up process" textFill="#404040c2">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <padding>
+            <Insets bottom="40.0" />
+         </padding>
+      </Label>
+      <AnchorPane prefHeight="331.0" prefWidth="600.0" style="-fx-background-color: #f1d9d9;">
+         <children>
+            <Label layoutX="232.0" layoutY="38.0" text="Set new password">
+               <font>
+                  <Font name="Calibri Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="170.0" layoutY="110.0" text="Enter default password" />
+            <PasswordField layoutX="170.0" layoutY="127.0" prefHeight="25.0" prefWidth="260.0" />
+            <Label layoutX="170.0" layoutY="164.0" text="Enter new password" />
+            <PasswordField layoutX="170.0" layoutY="181.0" prefHeight="25.0" prefWidth="260.0" />
+            <Button layoutX="170.0" layoutY="221.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="260.0" style="-fx-background-color: #4286F4;" text="Confirm new password" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="13.0" />
+               </font>
+            </Button>
+            <Label layoutX="182.0" layoutY="60.0" prefHeight="41.0" prefWidth="238.0" text="Change your default password to complete the sign-up process" textAlignment="CENTER" textFill="#475467" wrapText="true" />
+            <Button fx:id="backToLoginBtn" layoutX="171.0" layoutY="259.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="260.0" style="-fx-background-color: red;" text="Back to Login" textFill="WHITE">
+               <font>
+                  <Font name="Calibri" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
